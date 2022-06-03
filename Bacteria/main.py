@@ -14,6 +14,7 @@ class MyRoot(BoxLayout):
         super(MyRoot, self).__init__()
 
     def generate_number(self):
+        #sets a random number as the label's text
         self.randomLabel.text = str(random.randint(0, 1000))
 
 class AppDiProva(App):
