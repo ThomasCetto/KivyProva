@@ -1,6 +1,7 @@
 import kivy
 from kivy.app import App
 from kivy.uix.boxlayout import BoxLayout
+from os import *
 
 import random
 
@@ -15,6 +16,8 @@ class MyRoot(BoxLayout):
 
     def generate_number(self):
         #sets a random number as the label's text
+        # commenato iin italiana
+        sleep(100)
         self.randomLabel.text = str(random.randint(0, 1000))
 
 class AppDiProva(App):
